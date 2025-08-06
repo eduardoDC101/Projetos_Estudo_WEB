@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Semântica</title>
+    </head>
+    <body>
+
+        <header> <!-- Inicio Cabeçalho -->
+            
+            <nav aria-label="Menu Principal">
+                <ul>
+                    <li><a href="#">Compre agora</a></li>
+                    <li><a href="#">Terceirização</a></li>
+                    <li><a href="#">Franquias</a></li>
+                    <li><a href="#">Distribuidores</a></li>
+                    <li><a href="#">Desfrute Conosco</a></li>
+                </ul>
+            </nav>
+        </header> <!-- Final Cabeçalho -->
+
+        <main>
+            <section id="areaPromocao"> <!-- Inicio Promoção -->
+            <h2>Mês dos pais no Malagute</h2>
+            </section> <!-- Final Promoção -->
+
+            <section id="areaProdutos"> <!-- Inicio Produtos -->
+                <h2>Produtos:</h2>
+                <article>
+                    <header>
+                        <h3>Milho Enlatado 250g</h3>
+                        <p>R$ 12,99</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate ducimus nesciunt doloribus optio dignissimos repellat quas explicabo.</p>
+                    <figure>
+                        <img src="./assets/milho.png" alt="Milho em lata 250g">
+                        <figcaption>Lata de milho 250 gramas</figcaption>
+                    </figure>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Atum em Conserva 180g</h3>
+                        <p>R$ 15,95</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate ducimus nesciunt doloribus optio dignissimos repellat quas explicabo.</p>
+                    <figure>
+                        <img src="./assets/atum.png" alt="Atum em conserva 180g">
+                        <figcaption>Lata de atum em conserva de 180 gramas</figcaption>
+                    </figure>
+                </article>
+                
+                <article>
+                    <header>
+                        <h3>Leite Integral 1,5L</h3>
+                        <p>R$ 7,99</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et officiis doloribus delectus sit quos eius at rem, itaque sequi, magni fugit eveniet ducimus.</p>
+                    <figure>
+                        <img src="./assets/leite.png" alt="Leite Integral 1,5L">
+                        <figcaption>Leite Integral de 1,5 litros</figcaption>
+                    </figure>
+                </article>
+                
+            </section> <!-- Final Produtos -->
+
+            <aside id="areaAvaliacao"> <!-- Inicio Avaliações -->
+                <h2>Avaliações:</h2>
+                <article>
+                    <header>
+                        <h3>Carlos Henrique</h3>
+                        <p>03/12/2024</p>
+                    </header>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sed veritatis, eveniet doloribus reiciendis maxime eos, quisquam in, quam iste possimus hic mollitia nostrum? Optio incidunt qui soluta iusto voluptates!</p>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Lucas Pereira</h3>
+                        <p>12/07/2025</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ad, ipsum ab commodi a, eaque alias omnis quae sunt quis sint iure tenetur qui explicabo incidunt placeat possimus voluptatibus.</p>
+                </article>
+            </aside> <!-- Final Avaliações -->
+        </main>
+
+        <footer>
+            <p>&copy; Todos os direitos reservados a Malagute.</p>
+        </footer>
+
+    </body>
+
+
+    <!--
+    <header> e <footer: Cabeçalho e Rodapé de uma página ou SEÇÃO. Pode ser usado 1 OU MAIS vezes na página.
+    <main>: Único por página.
+    <section>: Agrupa vários blocos de mesmo relacionados. Deve ter um titulo (h1, h2...). (Fátia da pizza). 
+    <article>: Conteúdo independente. (Pizza inteira menor). Pode ter header até footer.
+    <aside>: Conteúdo complementar ou secundário. (refrigerante do lado). Ter titulo
+    <div>: Se não se encaixar em outras tags semânticas/usado para estilização.
+    Usar em <ol> e <ul>: role="list" (leitor entender que é um cojunto)
+    -->
+</html>
