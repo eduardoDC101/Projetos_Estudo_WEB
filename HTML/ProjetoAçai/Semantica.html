@@ -4,204 +4,212 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/1758c2510a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>HTML - Semântica</title>
     </head>
     <body>
 
         <header> <!-- Inicio Cabeçalho -->
-            <a href="#" aria-label="Página Inicial" id="logo">
-                <img src="https://cdn.vnda.com.br/desfruteacai/2022/01/06/19_1_5_587_DA_LogoOficialColor_Horizontal_Contorno.png?v=1641507677" alt="Logo do DesfruteAçai">
-            </a>
+            <div class="container-tamanho flex">
+                <a href="#" aria-label="Página Inicial" id="logo">
+                    <img src="https://cdn.vnda.com.br/desfruteacai/2022/01/06/19_1_5_587_DA_LogoOficialColor_Horizontal_Contorno.png?v=1641507677" alt="Logo do DesfruteAçai">
+                </a>
 
-            <nav aria-label="Menu Principal">
-                <ul>
-                    <li><a href="#">Compre agora</a></li>
-                    <li><a href="#">Terceirização</a></li>
-                    <li><a href="#">Franquias</a></li>
-                    <li><a href="#">Distribuidores</a></li>
-                    <li><a href="#">Desfrute Conosco</a></li>
-                </ul>
-            </nav>
+                <nav aria-label="Menu Principal">
+                    <ul>
+                        <li><a href="#">Compre Agora</a></li>
+                        <li><a href="#">Terceirização</a></li>
+                        <li><a href="#">Franquias</a></li>
+                        <li><a href="#">Distribuidores</a></li>
+                        <li><a href="#">Desfrute Conosco</a></li>
+                    </ul>
+                </nav>
 
-            <div class="flex" role="group" aria-label="Ações do Usuário">
-                <button aria-label="Buscar no Site"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button aria-label="Minha Conta"><i class="fa-solid fa-user"></i></button>
-                <button aria-label="Carrinho de Compras"><i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="flex" role="group" aria-label="Ações do Usuário" id="botoesAcao">
+                    <button aria-label="Minha Conta"><i class="fa-solid fa-user"></i></button>
+                    <button aria-label="Carrinho de Compras"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
             </div>
         </header> <!-- Final Cabeçalho -->
 
         <main> <!-- Inicio Coteúdo Principal -->
-            <h1>FAÇA SEU PEDIDO AGORA!</h1>
-            <p>Você está prestes a Desfrutar de uma sensação única e incomparável ao adquirir e Degustar um de nossos produtos.Escolha Desfrute Açaí e desfrute de uma vida mais saudável e feliz!</p>
+            <div class="container-tamanho">
+                <h1 class="opacidade">FAÇA SEU PEDIDO AGORA!</h1>
+                <p class="opacidade" id="paragrafoInicial">Você está prestes a Desfrutar de uma sensação única e incomparável ao adquirir e Degustar um de nossos produtos.Escolha Desfrute Açaí e desfrute de uma vida mais saudável e feliz!</p>
 
-            <div class="container-geral"> <!-- Inicio Container -->
+                <div class="container-geral"> <!-- Inicio Container -->
 
-                <aside aria-label="Filtro de Produtos"> <!-- Inicio Filtro Produtos -->
-                    <h2>Nossos produtos</h2>
-                    <form>
-                        <label for="Tradicional">
-                            <input type="radio" name="Produto" value="Açaí Tradicional" id="Tradicional">
-                            Açaí Tradicional
-                        </label>
-                        <label for="Premium">
-                            <input type="radio" name="Produto" value="Açaí Premium" id="Premium">
-                            Açaí Premium
-                        </label>
-                        <label for="Trufado">
-                            <input type="radio" name="Produto" value="Ninho Trufado" id="Trufado">
-                            Ninho Trufado
-                        </label>
-                        <label for="Coco">
-                            <input type="radio" name="Produto" value="Tapioca com Coco" id="Coco">
-                            Tapioca com Coco
-                        </label>
-                        <label for="Cupuaçu">
-                            <input type="radio" name="Produto" value="Cupuaçu" id="Cupuaçu">
-                            Cupuaçu
-                        </label>
-                    </form>
-                </aside> <!-- Final Filtro Produtos -->
+                    <aside aria-label="Filtro de Produtos"> <!-- Inicio Filtro Produtos -->
+                        <h2>Nossos produtos</h2>
+                        <form>
+                            <label for="Tradicional">
+                                <input type="radio" name="Produto" value="Açaí Tradicional" id="Tradicional">
+                                Açaí Tradicional
+                            </label>
+                            <label for="Premium">
+                                <input type="radio" name="Produto" value="Açaí Premium" id="Premium">
+                                Açaí Premium
+                            </label>
+                            <label for="Trufado">
+                                <input type="radio" name="Produto" value="Ninho Trufado" id="Trufado">
+                                Ninho Trufado
+                            </label>
+                            <label for="Coco">
+                                <input type="radio" name="Produto" value="Tapioca com Coco" id="Coco">
+                                Tapioca com Coco
+                            </label>
+                            <label for="Cupuaçu">
+                                <input type="radio" name="Produto" value="Cupuaçu" id="Cupuaçu">
+                                Cupuaçu
+                            </label>
+                        </form>
+                    </aside> <!-- Final Filtro Produtos -->
 
-                <section aria-label="Lista de Produtos"> <!-- Inicio Lista Produtos -->
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/08/0_1_6_656_AaTradicional1L2.jpg?v=1641613785" alt="Açaí Tradicional 1L">
-                        </a>
-                        <header>
-                            <h2>Açaí Tradicional 1L</h2>
-                            <p>R$ 29,90</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>2 Litros</button>
-                            <button>3.6 Litro</button>
-                            <button>10 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
+                    <section aria-label="Lista de Produtos"> <!-- Inicio Lista Produtos -->
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/08/0_1_6_656_AaTradicional1L2.jpg?v=1641613785" alt="Açaí Tradicional 1L">
+                            </a>
+                            <header>
+                                <h2>Açaí Tradicional 1L</h2>
+                                <p>R$ 29,90</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>2 Litros</button>
+                                <button>3.6 Litro</button>
+                                <button>10 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/08/0_1_2_212_AaTradicional3L2.jpg?v=1641613805" alt="Açaí Tradicional 3,6L">
-                        </a>
-                        <header>
-                            <h2>Açaí Tradicional 3,6L</h2>
-                            <p>R$ 79,90</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>2 Litros</button>
-                            <button>3.6 Litro</button>
-                            <button>5 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/08/0_1_2_212_AaTradicional3L2.jpg?v=1641613805" alt="Açaí Tradicional 3,6L">
+                            </a>
+                            <header>
+                                <h2>Açaí Tradicional 3,6L</h2>
+                                <p>R$ 79,90</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>2 Litros</button>
+                                <button>3.6 Litro</button>
+                                <button>5 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/08/0_1_5_528_AaPremium5L.jpg?v=1641613032" alt="Açaí Premium 5L">
-                        </a>
-                        <header>
-                            <h2>Açaí Premium 5L</h2>
-                            <p>R$ 119,90</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>2 Litros</button>
-                            <button>3.6 Litro</button>
-                            <button>10 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/08/0_1_5_528_AaPremium5L.jpg?v=1641613032" alt="Açaí Premium 5L">
+                            </a>
+                            <header>
+                                <h2>Açaí Premium 5L</h2>
+                                <p>R$ 119,90</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>2 Litros</button>
+                                <button>3.6 Litro</button>
+                                <button>10 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/13_1_6_629_Cupuau2lVnda.jpg?v=1641832603" alt="Creme de Cupuaçu 2L">
-                        </a>
-                        <header>
-                            <h2>Creme de Cupuaçu 2L</h2>
-                            <p>R$ 49,90</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>5 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/13_1_6_629_Cupuau2lVnda.jpg?v=1641832603" alt="Creme de Cupuaçu 2L">
+                            </a>
+                            <header>
+                                <h2>Creme de Cupuaçu 2L</h2>
+                                <p>R$ 49,90</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>5 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/15_1_3_398_Ninho5lVnda.jpg?v=1641840662" alt="Creme de Ninho Trufado 5L">
-                        </a>
-                        <header>
-                            <h2>Creme de Ninho Trufado 5L</h2>
-                            <p>R$ 99,90</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>2 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/15_1_3_398_Ninho5lVnda.jpg?v=1641840662" alt="Creme de Ninho Trufado 5L">
+                            </a>
+                            <header>
+                                <h2>Creme de Ninho Trufado 5L</h2>
+                                <p>R$ 99,90</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>2 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/15_1_7_779_Tapioca2lVnda.jpg?v=1641840608" alt="Creme de Tapioca com Coco 2L">
-                        </a>
-                        <header>
-                            <h2>Creme de Tapioca com Coco 2L</h2>
-                            <p>R$ 59,90</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>5 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/15_1_7_779_Tapioca2lVnda.jpg?v=1641840608" alt="Creme de Tapioca com Coco 2L">
+                            </a>
+                            <header>
+                                <h2>Creme de Tapioca com Coco 2L</h2>
+                                <p>R$ 59,90</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>5 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/13_1_3_366_Cupuau5lVnda.jpg?v=1641832616" alt="Creme de Cupuaçu 5L">
-                        </a>
-                        <header>
-                            <h2>Creme de Cupuaçu 5L</h2>
-                            <p>Esgotado</p>
-                        </header>
-                        <div class="tamanhos">
-                            <button>1 Litro</button>
-                            <button>2 Litros</button>
-                        </div>
-                        <button>COMPRAR</button>
-                    </article>
-                </section> <!-- Final Lista Produtos -->
+                        <article>
+                            <a href="#">
+                                <img src="https://cdn.vnda.com.br/600x/desfruteacai/2022/01/10/13_1_3_366_Cupuau5lVnda.jpg?v=1641832616" alt="Creme de Cupuaçu 5L">
+                            </a>
+                            <header>
+                                <h2>Creme de Cupuaçu 5L</h2>
+                                <p>Esgotado</p>
+                            </header>
+                            <div class="tamanhos">
+                                <button>1 Litro</button>
+                                <button>2 Litros</button>
+                            </div>
+                            <button class="butaoCompra">COMPRAR</button>
+                        </article>
+                    </section> <!-- Final Lista Produtos -->
 
-            </div> <!-- Final Container -->
+                </div> <!-- Final Container -->
+            </div>
         </main> <!-- Final Coteúdo Principal -->
 
         <footer>
-            <section aria-label="Inscrição na Newsletter">
+            <div class="container-tamanho">
+                <!--<section aria-label="Inscrição na Newsletter">
                 <h2>Inscreva-se em nossa Newsletter e receba promoções e novidades.</h2>
                 <form>
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="E-mail" required>
                     <button type="submit">Enviar</button>
                 </form>
-            </section>
+                </section>
 
-            <nav aria-label="Links do Rdopé">
-                <a href="#">Sobre</a>
-                <a href="#">Atendimentos</a>
-                <a href="#">Nossos Produtos</a>
-            </nav>
+                <nav aria-label="Links do Rdopé">
+                    <a href="#">Sobre</a>
+                    <a href="#">Atendimentos</a>
+                    <a href="#">Nossos Produtos</a>
+                </nav>-->
 
-            <address>
-                esfrute Açaí. CNPJ: 42.802.891/0001-40 Av. Dona Ruyce Ferraz Alvim, 1045 - Jardim Ruyce, Diadema - SP, 09951-002
-            </address>
+                <address>
+                    Desfrute Açaí. CNPJ: 42.802.891/0001-40 Av. Dona Ruyce Ferraz Alvim, 1045 - Jardim Ruyce, Diadema - SP, 09951-002
+                </address>
 
-            <p>
-                Technology: <a href="#">olist</a>
-            </p>
+                <p>
+                    Technology: <a href="#">olist</a>
+                </p>
+            </div>
         </footer>
 
     </body>
