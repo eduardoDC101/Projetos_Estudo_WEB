@@ -27,6 +27,12 @@ html{
     align-items: center;
 }
 
+@media screen and (max-width: 1330px) {
+    .flex{
+        justify-content: space-around;
+    }
+}
+
 .container-tamanho{
     max-width: 1280px;
     margin: 0 auto;
@@ -56,10 +62,28 @@ header{
     width: 100%;
 }
 
+header #botaoMobile{
+    display: none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
 header nav ul{
     list-style-type: none;
     display: flex;
     gap: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+    header nav, #botoesAcao{
+        display: none;
+    }
+    header #botaoMobile{
+        display: block;
+    }
 }
 
 header nav ul li a{
@@ -130,6 +154,12 @@ main aside{
     gap: 15px;
 }
 
+@media screen and (max-width: 1340px) {
+    main aside{
+        display: none;
+    }
+}
+
 main aside h2{
     font-weight: 300;
     font-size: 15px;
@@ -192,6 +222,28 @@ main section article{
     padding: 10px;
     border-radius: 7px;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1340px) {
+    main section article{
+        max-width: 380px;
+    }
+    main section{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    main section article{
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main section article{
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 main section article header{
