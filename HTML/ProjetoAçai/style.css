@@ -13,6 +13,8 @@
     --azul-marca: rgb(70, 70, 232);
     --cinza-claro: rgba(255, 255, 255, 0.5);
     --roxa-escuro-hover: rgba(103, 22, 101, 0.85);
+
+    --font-size-quatorze: 14px; /*teste*/
 }
 
 html{
@@ -51,9 +53,9 @@ html{
 header{
     width: 100%;
     padding: 10px 0;
-    background-color: var(--roxo-escuro);
+    background-color: var(--roxo-escuro, rgb(80, 1, 80));
     position: fixed;
-    border-bottom: 2px solid var(--roxa-escuro-hover);
+    border-bottom: 2px solid var(--roxa-escuro-hover, rgba(115, 10, 115, 0.445));
     z-index: 999;
 }
 
@@ -68,7 +70,7 @@ header{
 header #botaoMobile{
     display: none;
     background-color: transparent;
-    color: var(--branco-texto);
+    color: var(--branco-texto, white);
     font-size: 30px;
     border: none;
     cursor: pointer;
@@ -91,7 +93,7 @@ header nav ul{
 }
 
 header nav ul li a{
-    color: var(--branco-texto);
+    color: var(--branco-texto, white);
     text-decoration: none;
     font-weight: 600;
     transition: 0.85s;
@@ -101,7 +103,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background-color:  var(--roxa-escuro-hover); 
+    background-color:  var(--roxa-escuro-hover, rgba(115, 10, 115, 0.445)); 
 }
 
 #botoesAcao{
@@ -111,14 +113,14 @@ header nav ul li a:hover{
 #botoesAcao button{
     border: none;
     background-color: transparent;
-    color: var(--branco-texto);
+    color: var(--branco-texto, white);
     font-size: 18px;
     cursor: pointer;
     transition: 0.8s;
 }
 
 #botoesAcao button:hover{
-    color: var(--roxo-claro);
+    color: var(--roxo-claro, rgb(144, 39, 141));
 }
 
 /*Final - Cabeçalho*/
@@ -126,8 +128,8 @@ header nav ul li a:hover{
 /*Inicio - Principal*/
 
 main{
-    background-color: var(--roxo-escuro);
-    color: var(--branco-texto);
+    background-color: var(--roxo-escuro, rgb(80, 1, 80));
+    color: var(--branco-texto, white);
     padding-top: 100px;
     text-align: center;
 }
@@ -180,7 +182,7 @@ main aside form label{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: var(--font-size-quatorze);
     font-weight: 600;
 }
 
@@ -188,14 +190,14 @@ main aside form input[type="radio"]{
     appearance: none;
     width: 15px;
     height: 15px;
-    border: 1px solid var(--branco-texto);
+    border: 1px solid var(--branco-texto, white);
     border-radius: 0;
-    background-color: var(--roxo-escuro);
+    background-color: var(--roxo-escuro, rgb(80, 1, 80));
     cursor: pointer;
 }
 
 main aside form input[type="radio"]:checked{
-    background-color: var(--branco-texto);
+    background-color: var(--branco-texto, white);
 }
 
 main section{
@@ -210,7 +212,7 @@ main section{
 main section article header{
     position: static;
     padding: 0;
-    background-color: var(--roxo-claro);
+    background-color: var(--roxo-claro, rgb(144, 39, 141));
     border-bottom: 0;
     z-index: 0;
 }
@@ -221,7 +223,7 @@ main section article img{
 
 main section article{
     max-width: 330px;
-    background-color: var(--roxo-claro);
+    background-color: var(--roxo-claro, rgb(144, 39, 141));
     padding: 10px;
     border-radius: 7px;
     margin-bottom: 30px;
@@ -267,11 +269,11 @@ main section article header{
 }
 
 main section article header h2{
-    font-size: 14px;
+    font-size: var(--font-size-quatorze);
 }
 
 main section article header p{
-    font-size: 14px;
+    font-size: var(--font-size-quatorze);
 }
 
 main section article .tamanhos{
@@ -284,17 +286,17 @@ main section article .tamanhos{
 
 main section article .tamanhos button{
     background-color: transparent;
-    border: 1px solid var(--branco-texto);
+    border: 1px solid var(--branco-texto, white);
     border-radius: 100px;
-    color: var(--branco-texto);
+    color: var(--branco-texto, white);
     padding: 4px 10px;
 }
 
 main section article button.butaoCompra{
     width: 100%;
     background-color: transparent;
-    border: 1px solid var(--branco-texto);
-    color: var(--branco-texto);
+    border: 1px solid var(--branco-texto, white);
+    color: var(--branco-texto, white);
     border-radius: 100px;
     padding: 14px 0px;
     font-weight: 600;
@@ -304,7 +306,7 @@ main section article button.butaoCompra{
 }
 
 main section article button.butaoCompra:hover{
-    background-color: var(--roxa-escuro-hover);
+    background-color: var(--roxa-escuro-hover, rgba(115, 10, 115, 0.445));
 }
 
 /*Final - Principal*/
@@ -312,10 +314,10 @@ main section article button.butaoCompra:hover{
 /*Inicio - Rodapé*/
 
 footer{
-    background-color: var(--roxo-escuro);
+    background-color: var(--roxo-escuro, rgb(80, 1, 80));
     text-align: center;
     padding: 50px 0 20px 0;
-    color: var(--branco-texto);
+    color: var(--branco-texto, white);
 }
 
 footer section {
@@ -326,7 +328,7 @@ footer section {
 }
 
 footer section h2{
-    color: var(--cinza-claro);
+    color: var(--cinza-claro, rgba(255, 255, 255, 0.5));
     font-size: 18px;
 }
 
@@ -337,22 +339,22 @@ footer section form{
 }
 
 footer section form input{
-    background-color: var(--roxo-claro);
+    background-color: var(--roxo-claro, rgb(144, 39, 141));
     padding: 10px;
     font-weight: 600;
     border: none;
-    color: var(--branco-texto);
+    color: var(--branco-texto, white);
     border-start-start-radius: 10px;
     border-end-start-radius: 10px;
 }
 
 footer section form button{
     border: none;
-    background-color: var(--roxo-claro);
-    color: var(--branco-texto);
+    background-color: var(--roxo-claro, rgb(144, 39, 141));
+    color: var(--branco-texto, white);
     font-weight: 600;
     padding: 9px;
-    border: 1px solid var(--cinza-claro);
+    border: 1px solid var(--cinza-claro, rgba(255, 255, 255, 0.5));
     cursor: pointer;
     border-start-end-radius: 10px;
     border-end-end-radius: 10px;
@@ -360,7 +362,7 @@ footer section form button{
 }
 
 footer section form button:hover{
-    background-color: var(--roxa-escuro-hover);
+    background-color: var(--roxa-escuro-hover, rgba(115, 10, 115, 0.445));
 }
 
 footer nav{
@@ -373,18 +375,18 @@ footer nav{
 
 footer nav a{
     text-decoration: none;
-    color: var(--cinza-claro);
+    color: var(--cinza-claro, rgba(255, 255, 255, 0.5));
     font-weight: 600;
     transition: 0.8s;
 }
 
 footer nav a:hover{
-    color: var(--roxo-claro);
+    color: var(--roxo-claro, rgb(144, 39, 141));
 }
 
 @media screen and (max-width: 400px) {
     footer section h2{
-        font-size: 14px;
+        font-size: var(--font-size-quatorze);
     }
     footer nav{
         display: none;
@@ -396,9 +398,9 @@ footer nav a:hover{
 }
 
 footer address {
-    color: var(--cinza-claro);
+    color: var(--cinza-claro, rgba(255, 255, 255, 0.5));
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: var(--font-size-quatorze);
     font-weight: 600;
 }
 
@@ -408,7 +410,7 @@ footer p{
 }
 
 footer p a{
-    color: var(--azul-marca);
+    color: var(--azul-marca, rgb(70, 70, 232));
     text-decoration: none;font-weight: 800;
     font-size: 16px;
 }
