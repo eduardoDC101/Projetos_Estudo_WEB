@@ -17,6 +17,13 @@
     --font-size-quatorze: 14px; /*teste*/
 }
 
+[data-theme="green"]{
+    --roxo-escuro: rgb(12, 75, 42);
+    --roxo-claro: rgb(39, 144, 86);
+    --azul-marca: rgb(232, 70, 70);
+    --roxa-escuro-hover: rgba(17, 95, 56, 0.85);
+}
+
 html{
     font-family: "Raleway", sans-serif;
     position: relative;
