@@ -5,3 +5,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root{
+    --background-botao-principal: rgb(58, 127, 249);
+    --background-fundo: rgb(255, 255, 255);
+    --background-verificao-input: rgb(88, 135, 212);
+    --color-texto-principal: rgb(43, 44, 51);
+    --color-texto-secundario: rgb(205, 205, 205);
+}
+
+[data-theme="dark"]{
+    --background-botao-principal: rgb(249, 188, 58);
+    --background-fundo: rgb(43, 44, 51);
+    --background-verificao-input: rgb(212, 160, 88);
+    --color-texto-principal: rgb(255, 255, 255);
+    --color-texto-secundario: rgb(198, 195, 195);
+}
