@@ -2,21 +2,183 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
+/*Raíz*/
 :root{
+    /*Cores*/
     --background-botao-principal: rgb(58, 127, 249);
     --background-fundo: rgb(255, 255, 255);
     --background-verificao-input: rgb(88, 135, 212);
+    --color-hover-link: rgb(15, 73, 166);
     --color-texto-principal: rgb(43, 44, 51);
-    --color-texto-secundario: rgb(205, 205, 205);
+    --color-texto-secundario: rgb(194, 194, 194);
+    --branco: rgb(255, 255, 255);
+    
+    /* Tamanhos */
+    --font-size-principal: 22px;
+    --font-size-secundario: 15px;
+    --font-size-outros: 13px;
 }
 
 [data-theme="dark"]{
     --background-botao-principal: rgb(249, 188, 58);
     --background-fundo: rgb(43, 44, 51);
     --background-verificao-input: rgb(212, 160, 88);
+    --color-hover-link: rgb(166, 65, 15);
     --color-texto-principal: rgb(255, 255, 255);
     --color-texto-secundario: rgb(198, 195, 195);
+    --branco: rgb(255, 255, 255);
 }
+/*Raíz*/
+
+/* Mobile First */
+
+.container-fundo{
+    width: 100%;
+    background-color: var(--background-fundo);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-esquerda{
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    background-color: var(--background-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Cabeçalho */
+
+header span{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--background-botao-principal);
+}
+
+header span a{
+    color: var(--color-texto-principal);
+    text-decoration: none;
+}
+
+/* Cabeçalho*/
+
+
+/* Principal */
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 20px; 
+    text-align: center;
+    height: 100%;
+    justify-content: start;
+
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main h2{
+    font-size: var(--font-size-secundario);
+    color: var(--color-texto-principal);
+}
+
+main h1{
+    font-size: var(--font-size-principal);
+    color: var(--color-texto-principal);
+}
+
+main form button[type="submit"]{
+    background-color: var(--background-botao-principal);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: var(--font-size-outros);
+    transition: 0.7s;
+}
+
+main form button[type="submit"]:hover{
+    background-color: var(--color-hover-link);
+    cursor: pointer;
+}
+
+
+main .divider{
+    display: flex;
+    align-items: center;
+    color: var(--color-texto-secundario);
+    text-align: center;
+    font-size: var(--font-size-outros);
+    margin-bottom: 15px;
+}
+
+.divider::before,
+.divider::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--color-texto-secundario);
+}
+
+.divider span{
+    margin: 0 0.5rem;
+}
+
+.flexContas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;   
+}
+
+.flexContas button{
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: var(--background-fundo);
+    font-size: var(--font-size-secundario);
+    color: var(--color-texto-principal);
+    transition: 0.5s;
+}
+
+.flexContas button:hover{
+    background-color: var(--color-texto-secundario);
+    cursor: pointer;
+    color: var(--background-fundo);
+}
+
+/* Principal */
+
+
+/* Rodapé */
+
+footer a{
+    text-decoration: none;
+    color: var(--background-botao-principal);
+    font-weight: 600;
+}
+
+footer a:hover{
+    color: var(--color-hover-link);
+}
+
+/* Rodapé */
+
+/* Mobile First */

@@ -5,15 +5,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Página de Login do site Interstellar">
         <meta name="robots" content="index, follow">
-        <meta name="og:title" content="Página de Login">
-        <meta name="og:description" content="Página de Login - Interstellar">
-        <meta name="og:image" content="assets/icone.png">
+        <meta property="og:title" content="Página de Login">
+        <meta property="og:description" content="Página de Login - Interstellar">
+        <meta property="og:image" content="assets/icone.png">
         <script src="https://kit.fontawesome.com/1758c2510a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="icon" href="assets/icone.png">
         <link rel="stylesheet" href="style.css">
         <title>Interstellar - Login</title>
     </head>
     <body>
+        
+        <div class="container-fundo"> <!-- Container Fundo -->
+            
+            <div class="container-esquerda"> <!-- Container Esquerda -->
+
+                <header>
+                    <span>&lt;<a href="#">INTERSTELLAR</a>&gt;</span>
+                </header>
+
+                <main> <!-- Principal -->
+                    <div aria-label="titulos princiais">
+                        <h2>Start your journey</h2>
+                        <h1>Sign Up to Interstellar</h1>
+                    </div>
+
+                    <form>
+
+                        <div class="input-group"> 
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="********" required>
+                            <span class="icon"><i class="fa-solid fa-eye"></i></span>
+                            <!--<i class="fa-solid fa-eye-slash"></i>-->
+                        </div>
+
+                        <button type="submit">Sign Up</button>
+
+
+                    </form>
+
+                    <div aria-label="Formas de Entrar">
+                        <div class="divider">
+                            <span>or sign up with</span>
+                        </div>
+
+                        <div aria-label="Contas do Usuário" class="flexContas">
+                            <button><i class="fa-brands fa-facebook"></i></button>
+                            <button><i class="fa-brands fa-google"></i></button>
+                            <button><i class="fa-brands fa-apple"></i></button>
+                        </div>
+                    </div>
+
+                </main> <!-- Principal -->
+
+                <footer>
+                    <p>Have an account? <a href="#">Sign in</a></p>
+                </footer>
+            
+            </div> <!-- Container Esquerda -->
+        
+        </div> <!-- Container Fundo -->
         
         <script src="script.js"></script>
     </body>
