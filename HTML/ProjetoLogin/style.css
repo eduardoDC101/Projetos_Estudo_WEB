@@ -145,7 +145,14 @@ main h1{
     position: absolute;
     right: 0.85rem;
     color: var(--color-texto-secundario);
+    cursor: pointer;
 }
+
+.input-group span:hover{
+    color: var(--background-verificao-input);
+}
+
+
 
 main form button[type="submit"]{
     background-color: var(--background-botao-principal);
