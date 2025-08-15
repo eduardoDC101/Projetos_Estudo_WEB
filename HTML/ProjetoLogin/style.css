@@ -19,6 +19,7 @@ html{
     --color-texto-principal: rgb(43, 44, 51);
     --color-texto-secundario: rgb(194, 194, 194);
     --branco: rgb(255, 255, 255);
+    --texto-input: rgb(0, 0, 0);
     
     /* Tamanhos */
     --font-size-principal: 22px;
@@ -34,6 +35,7 @@ html{
     --color-texto-principal: rgb(255, 255, 255);
     --color-texto-secundario: rgb(198, 195, 195);
     --branco: rgb(255, 255, 255);
+    --texto-input: rgb(255, 255, 255);
 }
 /*Raíz*/
 
@@ -147,6 +149,7 @@ main h1{
     outline: none;
     transition: 0.5s;
     background-color: var(--background-fundo);
+    color: var(--texto-input);
 }
 
 .input-group label{
