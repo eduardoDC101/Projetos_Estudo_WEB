@@ -80,17 +80,19 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-    gap: 20px; 
+    gap: 40px; 
     text-align: center;
     height: 100%;
     justify-content: start;
+    width: 90%;
+    max-width: 450px;
 
 }
 
 main form{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 main h2{
@@ -101,6 +103,48 @@ main h2{
 main h1{
     font-size: var(--font-size-principal);
     color: var(--color-texto-principal);
+}
+
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 1rem 2.5rem 1rem 1rem;
+    border: 2px solid var(--color-texto-secundario);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.input-group label{
+    position: absolute;
+    top: -0.6rem;
+    left: 0.85rem;
+    background-color: var(--background-fundo);
+    padding: 0 0.5rem;
+    font-size: var(--font-size-outros);
+    color: var(--color-texto-secundario);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.input-group input:focus{
+    border: 2px solid var(--background-verificao-input);
+}
+
+.input-group input:focus + label {
+  color: var(--background-verificao-input);
+}
+
+.input-group span{
+    position: absolute;
+    right: 0.85rem;
+    color: var(--color-texto-secundario);
 }
 
 main form button[type="submit"]{
@@ -119,7 +163,6 @@ main form button[type="submit"]:hover{
     background-color: var(--color-hover-link);
     cursor: pointer;
 }
-
 
 main .divider{
     display: flex;
@@ -182,3 +225,32 @@ footer a:hover{
 /* Rodapé */
 
 /* Mobile First */
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1100px) {
+    .container-fundo{
+        background-image: url(./assets/fundc.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .container-esquerda{
+        width: 45%;
+        height: 100%;
+        margin: 0;
+        padding: 20px 0;
+    }
+    main{
+        width: 75%;
+    }
+    main h2{
+        font-size: calc(var(--font-size-secundario)*1.3);
+    }
+
+    main h1{
+        font-size: calc(var(--font-size-principal)*1.3);
+    }
+}
+
+/* Responsividade Desktop */
