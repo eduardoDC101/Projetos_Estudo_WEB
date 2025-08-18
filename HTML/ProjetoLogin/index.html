@@ -28,25 +28,25 @@
                 </header>
 
                 <main> <!-- Principal -->
-                    <div aria-label="titulos princiais">
+                    <div>
                         <h2>Start your journey</h2>
                         <h1>Sign Up to Interstellar</h1>
                     </div>
 
-                    <form>
+                    <form action="#" method="get">
 
                         <div class="input-group"> 
-                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                            <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="email" required>
                             <label for="email">E-mail:</label>
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                         </div>
                         
                         <div class="input-group">
-                            <input type="password" name="password" id="password" placeholder="********" required>
+                            <input type="password" name="password" id="password" placeholder="********" autocomplete="current-password" required>
                             <label for="password">Password</label>
-                            <span class="icon" id="seePassword">
+                            <button type="button" class="icon" id="seePassword">
                                 <i class="fa-solid fa-eye"></i>
-                            </span>
+                            </button>
                         </div>
 
                         <button type="submit">Sign Up</button>
@@ -54,15 +54,15 @@
 
                     </form>
 
-                    <div aria-label="Formas de Entrar">
+                    <div>
                         <div class="divider">
                             <span>or sign up with</span>
                         </div>
 
-                        <div aria-label="Contas do Usuário" class="flexContas">
-                            <button><i class="fa-brands fa-facebook"></i></button>
-                            <button><i class="fa-brands fa-google"></i></button>
-                            <button><i class="fa-brands fa-apple"></i></button>
+                        <div class="flexContas">
+                            <button type="button" aria-label="Entrar com Facebook"><i class="fa-brands fa-facebook"></i></button>
+                            <button type="button" aria-label="Entrar com Google"><i class="fa-brands fa-google"></i></button>
+                            <button type="button" aria-label="Entrar com Apple"><i class="fa-brands fa-apple"></i></button>
                         </div>
                     </div>
 

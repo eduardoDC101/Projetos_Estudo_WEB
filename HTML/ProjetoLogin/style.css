@@ -44,7 +44,7 @@ html{
 .container-fundo{
     width: 100%;
     background-color: var(--background-fundo);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
 }
@@ -172,14 +172,16 @@ main h1{
   color: var(--background-verificao-input);
 }
 
-.input-group span{
+.input-group span,button.icon{
     position: absolute;
     right: 0.85rem;
     color: var(--color-texto-secundario);
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
-.input-group span:hover{
+.input-group span:hover,button.icon:hover{
     color: var(--background-verificao-input);
 }
 

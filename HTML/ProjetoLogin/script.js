@@ -1,3 +1,11 @@
+/* Colocando estado de tema no <html> */
+
+let tagHtml = document.documentElement;
+let atributoHtml = tagHtml.getAttribute('data-theme');
+tagHtml.setAttribute('data-theme', localStorage.getItem('estado'));
+
+/* Colocando estado de tema no <html> */
+
 /* Mostrando Senha */
 const inputSenha = document.getElementById('password');
 const iconeSenha = document.getElementById('seePassword');
@@ -26,7 +34,9 @@ botaoTema.addEventListener('click' , () =>{
 
     botaoTema.innerHTML = atributoHtml === "light"
     ? "<i class='fa-solid fa-sun'></i>"
-    : "<i class='fa-solid fa-moon'>";
+    : "<i class='fa-solid fa-moon'></i>";
+
+    localStorage.setItem('estado', tagHtml.getAttribute('data-theme'));
 
 });
 
