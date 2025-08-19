@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+
+    /*Fundos*/
+    --background-sidebar: rgb(10, 17,28);
+    --background-sidebar-hover: rgb(47, 54, 66);
+    --background-fundo: rgb(249, 249, 249);
+    ---background-graficos-escuro: rgb(0, 102, 255);
+    --background-graficos-claros: rgb(178, 209, 254);
+
+    /*Cores*/
+    --color-itens: rgb(255, 255, 255);
+    --color-verder: rgb(31, 184, 123);
+    --color-roxo: rgb(124, 37, 233);
+    --color-letras-sidebar: rgb(115, 122, 133);
+
+    /*Tamanhos*/
+    --font-size-principaL: 2.5rem;
+    --font-size-secundario: 2rem;
+    --font-size-geral: 1.4rem;
+    --font-size-logo: 2.2rem;
+    --font-size-valores: 1.7rem;
+
+}
+
+[data-theme="dark"]{
+
+}
