@@ -35,5 +35,14 @@ html{
 }
 
 [data-theme="dark"]{
+    /*Fundos*/
+    --background-sidebar: rgb(10, 12, 15);
+    --background-sidebar-hover: rgb(40, 46, 57);
+    --background-fundo: rgb(41, 41, 41);
+    ---background-graficos-escuro: rgb(7, 74, 174);
+    --background-graficos-claros: rgb(74, 101, 142);
 
+    /*Cores*/
+    --color-itens: rgb(51, 51, 51);
+    
 }
