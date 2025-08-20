@@ -6,6 +6,7 @@
 
 html{
     height: 100%;
+    width: 100%;
     font-size: 10px;
     font-family: "Poppins", sans-serif;
 }
@@ -46,3 +47,19 @@ html{
     --color-itens: rgb(51, 51, 51);
     
 }
+
+/* Container-Geral Grid */
+
+.container-geral{
+    width: 100dvh;
+    width: 100dvw;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: 
+    "sidebar main main"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+/* Container-Geral Grid */
