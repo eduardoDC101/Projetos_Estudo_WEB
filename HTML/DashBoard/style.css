@@ -25,12 +25,13 @@ html{
     --color-verder: rgb(31, 184, 123);
     --color-roxo: rgb(124, 37, 233);
     --color-letras-sidebar: rgb(115, 122, 133);
+    --color-bordas-main: rgb(220, 220, 220); 
 
     /*Tamanhos*/
-    --font-size-principal: 2.5rem;
+    --font-size-principal: 3rem;
     --font-size-secundario: 2rem;
-    --font-size-geral: 1.4rem;
-    --font-size-logo: 2.2rem;
+    --font-size-geral: 1.6rem;
+    --font-size-logo: 1.7rem;
     --font-size-valores: 1.7rem;
 
 }
@@ -55,55 +56,97 @@ html{
     width: 100dvw;
     display: grid;
     grid-template-columns: 220px 1fr 1fr;
-    grid-template-rows: 1fr 1fr 30px;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "sidebar main main"
     "sidebar main main"
-    "footer footer footer";
 }
 
-aside#sidebar{
+#sidebar{
     grid-area: sidebar;
-    background-color: blueviolet;
+    background-color: var(--background-sidebar);
+    display: flex;
+    flex-direction: column;
 }
+
+aside #logo{
+    font-size: var(--font-size-logo);
+    color: white;
+    border-bottom: 1px solid var(--color-letras-sidebar);
+    padding: 1rem;
+} 
+
+#sidebar nav{ 
+    padding: 1.5rem;
+}
+
+#sidebar nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#sidebar nav ul li a{
+    text-decoration: none;
+    color: var(--color-letras-sidebar);
+    font-size: var(--font-size-geral);
+}
+
 main{
     grid-area: main;
     display: grid;
-    background-color: cadetblue;
-    grid-template-rows: 1fr 2fr;
+    background-color: var(--background-fundo);
+    grid-template-rows: 50px 1fr 2fr;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
+    "titulo . ."
     "resumo resumo maisVendido"
     "desempenho desempenho recentes";
     padding: 5rem;
     gap: 5rem;
 }
 
-#resumoVendas{
+#titulo{
+    grid-area: titulo;
+}
+
+#titulo h2{
+    font-size: var(--font-size-principal);
+}
+
+#titulo p{
+    font-size: var(--font-size-geral);
+}
+
+h2{
+    font-size: var(--font-size-secundario);
+}
+
+.borda{
+    border: 1px solid var(--color-bordas-main);
+    border-radius: 5px;
+}
+
+.resumoVendas{
     grid-area: resumo;
-    background-color:blue;
+    background-color: var(--color-itens);
 }
 
-#maisVendido{
+.maisVendido{
     grid-area: maisVendido;
-    background-color:blue;
+    background-color: var(--color-itens);
 }
 
-#desempenho{
+.desempenho{
     grid-area: desempenho;
-    background-color:blue;
+    background-color: var(--color-itens);
 }
 
-#recentes{
+.recentes{
     grid-area: recentes;
-    background-color:blue;
+    background-color: var(--color-itens);
 }
 
-
-footer{
-    grid-area: footer;
-    background-color: brown;
-}
 
 
 
