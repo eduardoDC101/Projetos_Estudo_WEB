@@ -17,7 +17,7 @@ html{
     --background-sidebar: rgb(10, 17,28);
     --background-sidebar-hover: rgb(47, 54, 66);
     --background-fundo: rgb(249, 249, 249);
-    ---background-graficos-escuro: rgb(0, 102, 255);
+    --background-graficos-escuro: rgb(0, 102, 255);
     --background-graficos-claros: rgb(178, 209, 254);
 
     /*Cores*/
@@ -27,7 +27,7 @@ html{
     --color-letras-sidebar: rgb(115, 122, 133);
 
     /*Tamanhos*/
-    --font-size-principaL: 2.5rem;
+    --font-size-principal: 2.5rem;
     --font-size-secundario: 2rem;
     --font-size-geral: 1.4rem;
     --font-size-logo: 2.2rem;
@@ -40,7 +40,7 @@ html{
     --background-sidebar: rgb(10, 12, 15);
     --background-sidebar-hover: rgb(40, 46, 57);
     --background-fundo: rgb(41, 41, 41);
-    ---background-graficos-escuro: rgb(7, 74, 174);
+    --background-graficos-escuro: rgb(7, 74, 174);
     --background-graficos-claros: rgb(74, 101, 142);
 
     /*Cores*/
@@ -51,15 +51,60 @@ html{
 /* Container-Geral Grid */
 
 .container-geral{
-    width: 100dvh;
+    height: 100dvh;
     width: 100dvw;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-area: 
+    grid-template-columns: 220px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 30px;
+    grid-template-areas: 
     "sidebar main main"
     "sidebar main main"
     "footer footer footer";
 }
+
+aside#sidebar{
+    grid-area: sidebar;
+    background-color: blueviolet;
+}
+main{
+    grid-area: main;
+    display: grid;
+    background-color: cadetblue;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "resumo resumo maisVendido"
+    "desempenho desempenho recentes";
+    padding: 5rem;
+    gap: 5rem;
+}
+
+#resumoVendas{
+    grid-area: resumo;
+    background-color:blue;
+}
+
+#maisVendido{
+    grid-area: maisVendido;
+    background-color:blue;
+}
+
+#desempenho{
+    grid-area: desempenho;
+    background-color:blue;
+}
+
+#recentes{
+    grid-area: recentes;
+    background-color:blue;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+}
+
+
 
 /* Container-Geral Grid */
