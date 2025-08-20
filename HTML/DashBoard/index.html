@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1758c2510a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <title>DashBoard</title>
     </head>
@@ -23,11 +24,29 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Pedidos</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="#">Financeiro</a></li>
-                        <li><a href="#">Sair</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-envelope"></i>Pedidos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>Produtos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-user"></i>Clientes
+                            </a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-sack-dollar"></i>Financeiro
+                            </a></li>
+                        <li class="sair">
+                            <a href="#">
+                                Sair<i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </aside>
@@ -37,10 +56,28 @@
                     <p>Administre todo seu negócio por aqui </p>
                 </section>
                 <section class="resumoVendas borda">
-                    <h2>Resumo das Vendas:</h2>
+                    <h2>Resumo Vendas Mensais:</h2>
+                    <div class="resumovendasdiv" aria-label="Dados do mês">
+                        <article class="articleverde">
+                            <strong>Total Vendido</strong>
+                            <p>R$ 1.225,00</p>
+                        </article>
+                        <article class="articleroxo">
+                            <strong>Quantidade de Produtos</strong>
+                            <p>56 unidades</p>
+                        </article>
+                        <article class="articleazul">
+                            <strong>Clientes Novos</strong>
+                            <p>17 pessoas</p>
+                        </article>
+                    </div>
                 </section>
                 <section class="maisVendido borda">
                     <h2>Mais Vendidos:</h2>
+                        <article>
+                            <strong>Box de Memórias</strong>
+                            <p>Box mini - R$30,00</p>
+                        </article>
                 </section>
                 <section class="desempenho borda">
                     <h2>Desempenho:</h2>
