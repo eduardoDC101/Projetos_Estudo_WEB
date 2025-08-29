@@ -53,8 +53,8 @@ html{
 /* Container-Geral Grid */
 
 .container-geral{
-    height: 100dvh;
-    width: 100dvw;
+    min-height: 100dvh;
+    width: 100%;
     display: grid;
     grid-template-columns: 220px 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -79,7 +79,7 @@ aside #logo{
 
 #sidebar nav{ 
     padding: 2rem;
-    height: 100dvh;
+    flex: 1;
 }
 
 #sidebar nav ul{
@@ -137,14 +137,14 @@ main{
     grid-area: main;
     display: grid;
     background-color: var(--background-fundo);
-    grid-template-rows: 50px 1fr 2fr;
+    grid-template-rows: auto 1fr 2fr;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "titulo . ."
     "resumo resumo maisVendido"
     "desempenho desempenho recentes";
-    padding: 5rem;
-    gap: 5rem;
+    padding: 3rem 5rem;
+    gap: 3rem;
 }
 
 #titulo{
@@ -171,13 +171,15 @@ h2{
 .resumoVendas{
     grid-area: resumo;
     background-color: var(--color-itens);
+    display: flex;
+    flex-direction: column;
 }
 
 section div.resumovendasdiv{
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2rem;
 }
 
 .resumoVendas article{
@@ -211,6 +213,14 @@ section .articleazul{
 .desempenho{
     grid-area: desempenho;
     background-color: var(--color-itens);
+}
+
+.desempenho figure{
+    width: 100%;
+}
+
+.desempenho figure img{
+    width: 100%;
 }
 
 .recentes{
