@@ -17,8 +17,6 @@ html{
     --background-sidebar: rgb(10, 17,28);
     --background-sidebar-hover: rgb(47, 54, 66);
     --background-fundo: rgb(249, 249, 249);
-    --background-graficos-escuro: rgb(0, 102, 255);
-    --background-graficos-claros: rgb(178, 209, 254);
 
     /*Cores*/
     --color-itens: rgb(255, 255, 255);
@@ -27,6 +25,8 @@ html{
     --color-letras-sidebar: rgb(115, 122, 133);
     --color-bordas-main: rgb(220, 220, 220); 
     --color-rosa: rgb(233, 30, 99);
+    --color-texto: rgb(21, 21, 21);
+    --color-sections: rgb(250, 250, 250);
 
     /*Tamanhos*/
     --font-size-principal: 3rem;
@@ -42,11 +42,11 @@ html{
     --background-sidebar: rgb(10, 12, 15);
     --background-sidebar-hover: rgb(40, 46, 57);
     --background-fundo: rgb(41, 41, 41);
-    --background-graficos-escuro: rgb(7, 74, 174);
-    --background-graficos-claros: rgb(74, 101, 142);
 
     /*Cores*/
-    --color-itens: rgb(51, 51, 51);
+    --color-itens: rgb(255, 255, 255);
+    --color-texto: rgb(226, 226, 226);
+    --color-sections: rgb(41, 41, 41);
     
 }
 
@@ -140,7 +140,7 @@ main{
     grid-template-rows: auto 1fr 2fr;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    "titulo . ."
+    "titulo . darkMode"
     "resumo resumo maisVendido"
     "desempenho desempenho recentes";
     padding: 3rem 5rem;
@@ -149,7 +149,30 @@ main{
 
 #titulo{
     grid-area: titulo;
+    color: var(--color-texto);
 }
+
+#darkMode{
+    grid-area: darkMode;
+    text-align: right;
+}
+
+#darkMode button{
+    padding: 1rem 1.3rem;
+    border: 1px solid var(--color-bordas-main);
+    border-radius: 20rem;
+    background-color: var(--background-fundo);
+    color: var(--background-sidebar);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--color-texto);
+}
+
+#darkMode button:hover{
+    background-color: var(--background-sidebar);
+    color: white;
+}
+
 
 #titulo h2{
     font-size: var(--font-size-principal);
@@ -170,9 +193,10 @@ h2{
 
 .resumoVendas{
     grid-area: resumo;
-    background-color: var(--color-itens);
+    background-color: var(--color-sections);
     display: flex;
     flex-direction: column;
+    color: var(--color-texto);
 }
 
 section div.resumovendasdiv{
@@ -183,10 +207,11 @@ section div.resumovendasdiv{
 }
 
 .resumoVendas article{
-    color: var(--color-itens);
+    color: var(--color-sections);
     font-size: var(--font-size-geral);
     padding: 1rem 1.5rem;
     border-radius: 5px;
+    color: var(--color-texto);
 }
 
 section .articleverde{
@@ -201,7 +226,8 @@ section .articleazul{
 
 .maisVendido{
     grid-area: maisVendido;
-    background-color: var(--color-itens);
+    background-color: var(--color-sections);
+    color: var(--color-texto);
 }
 
 .maisVendido article{
@@ -212,7 +238,8 @@ section .articleazul{
 
 .desempenho{
     grid-area: desempenho;
-    background-color: var(--color-itens);
+    background-color: var(--color-sections);
+    color: var(--color-texto);
 }
 
 .desempenho figure{
@@ -225,7 +252,8 @@ section .articleazul{
 
 .recentes{
     grid-area: recentes;
-    background-color: var(--color-itens);
+    background-color: var(--color-sections);
+    color: var(--color-texto);
 }
 
 .pedidosRecentes{
@@ -240,10 +268,6 @@ section .articleazul{
     font-size: 1.2rem;
     cursor: pointer;
     transition: 0.5s;
-}
-
-.pedidosRecentes article:hover{
-    background-color: rgb(225, 225, 225);
 }
 
 section:not(#titulo){
