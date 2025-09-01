@@ -11,11 +11,10 @@
         <!--<meta property="og:image" content="imagemredessociais.jpg">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/1758c2510a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1758c2510a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
-        <title>DashBoard</title>
+        <title>Polaroigs — Dashboard</title>
     </head>
     <body>
         <div class="container-geral"> 
@@ -27,25 +26,25 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <i class="fa-solid fa-envelope"></i>Pedidos
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>Pedidos
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>Produtos
+                                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Produtos
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-solid fa-user"></i>Clientes
+                                <i class="fa-solid fa-user" aria-hidden="true"></i>Clientes
                             </a></li>
                         <li>
                             <a href="#">
-                                <i class="fa-solid fa-sack-dollar"></i>Financeiro
+                                <i class="fa-solid fa-sack-dollar" aria-hidden="true"></i>Financeiro
                             </a></li>
                         <li class="sair">
                             <a href="#">
-                                Sair<i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Sair<i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
@@ -56,22 +55,24 @@
                     <h2>DashBoard</h2>
                     <p>Administre todo seu negócio por aqui </p>
                 </section>
-                <section id="darkMode">
-                    <button id="darkModeBtn" type="button"><i class="fa-solid fa-moon"></i></button>
-                </section>
+                <div id="darkMode">
+                    <button id="darkModeBtn" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
                 <section class="resumoVendas borda">
                     <h2>Resumo Vendas Mensais:</h2>
-                    <div class="resumovendasdiv" aria-label="Dados do mês">
+                    <div class="resumovendasdiv">
                         <article class="articleverde">
-                            <strong>Total Vendido</strong>
+                            <h3>Total Vendido</h3>
                             <p>R$ 1.225,00</p>
                         </article>
                         <article class="articleroxo">
-                            <strong>Quantidade de Produtos</strong>
+                            <h3>Quantidade de Produtos</h3>
                             <p>56 unidades</p>
                         </article>
                         <article class="articleazul">
-                            <strong>Clientes Novos</strong>
+                            <h3>Clientes Novos</h3>
                             <p>17 pessoas</p>
                         </article>
                     </div>
@@ -79,20 +80,20 @@
                 <section class="maisVendido borda">
                     <h2>Mais Vendidos:</h2>
                         <article>
-                            <strong>32x Box de Memórias</strong>
+                            <h3>32x Box de Memórias</h3>
                             <p>Box mini - R$30,00</p>
-                            <p></p>
                         </article>
                 </section>
                 <section class="desempenho borda">
                     <h2>Desempenho:</h2>
                     <figure>
-                        <img src="assets/grafico.png" alt="gráfico de dados">
+                        <img src="assets/grafico.png" alt="Gráfico das vendas mensais (jan–dez). Picos em maio e novembro." loading="lazy">
+                        <figcaption>Vendas mensais — valores em reais.</figcaption>
                     </figure>
                 </section>
                 <section class="recentes borda">
                     <h2>Pedidos Recentes:</h2>
-                    <div class="pedidosRecentes" aria-label="pedidos recentes">
+                    <div class="pedidosRecentes">
                         <article class="borda">
                             <h3>Ritalina Silva</h3>
                             <p><i>Polaroid M - Pacote Mini - R$25,00</i></p>
