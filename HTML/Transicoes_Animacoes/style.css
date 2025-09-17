@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+:root{
+    --vermelho: red;
+    --azul: blue;
+    --verde: green;
+    --preto: black;
+    --branco: white;
+}
+
+section#quadrados{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div1{
+    height: 200px;
+    width: 200px;
+    background-color: var(--azul);
+    transition: background-color 3s linear 0.5s;
+}
+
+.div1:hover{
+    background-color: var(--preto);
+}
+
+.div2{
+    height: 200px;
+    width: 200px;
+    background-color: var(--preto);
+    transition: transform 3s linear, background-color 3s linear;
+}
+
+.div2:hover{
+    transform: scale(2);
+    background-color: var(--verde);
+}
+
+.div3{
+    height: 200px;
+    width: 200px;
+    background-color: var(--vermelho);
+    transition: border-radius 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.div3:hover{
+    border-radius: 200px;
+    transform: scale(0.5);
+}
+
+
+section#header{
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 2rem;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section#header ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+section#header ul li{
+    background-color: var(--preto);
+    padding: 20px;
+    transition: background-color 1s ease-in, border-radius 1s ease-in, padding 1s ease-in, transform 1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#header ul li:hover{
+    background-color: var(--vermelho); 
+    border-radius: 100px;
+    padding: 5px;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+ 
+
+/*
+selector {
+  transition: property duration timing-function delay;
+}
+selectior:hover{
+  property: newValue;
+}
+
+- property: qual propriedade vai ser animada (color, transform, background-color...)
+- duration: tempo da transição (0.3s, 1s, 200ms)
+- timing-function: curva de aceleração da mudança
+    Valores comuns:
+        - ease (default, começa devagar, acelera, desacelera)
+        - linear (velocidade constante)
+        - ease-in (lento no início, rápido depois)
+        - ease-out (rápido no início, lento depois)
+        - ease-in-out (lento → rápido → lento)
+- delay: atraso para iniciar a transição
+*/
