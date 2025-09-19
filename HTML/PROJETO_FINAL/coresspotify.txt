@@ -1,0 +1,4 @@
+Cinzas claros: #1f1f1f
+branco: #ffffff
+parte de cima cinza degrade: #202020
+preto fundo: #121212
